@@ -35,8 +35,17 @@
       newItem.innerText = myInput.value
       myList.appendChild(newItem)
       myInput.value = '';
-    }    
+    } 
+   
+
   }
+  document.addEventListener('keyup', keycap)
+function keycap(data) {
+if (data.keyCode ==13) {
+addItem()
+}
+}
+
 
 </script>
 
